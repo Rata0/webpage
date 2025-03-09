@@ -1,12 +1,12 @@
-import { IoMenuSharp } from "react-icons/io5";
-import { IoIosClose } from "react-icons/io";
-import { CiShoppingCart, CiHeart, CiLogin  } from "react-icons/ci";
-import { useState } from "react";
+import { IoMenuSharp } from 'react-icons/io5'
+import { IoIosClose } from 'react-icons/io'
+import { CiShoppingCart, CiHeart, CiLogin  } from 'react-icons/ci'
+import { useState } from 'react'
 
 export default function NavBar() {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(false)
 
-  const handle = () => setNav(!nav);
+  const handle = () => setNav(!nav)
 
   return (
     <div className="border flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-[#000]">
@@ -27,7 +27,7 @@ export default function NavBar() {
         <li className="p-4 hover:text-red-500 transition-colors duration-200"><CiShoppingCart size={30}/></li>
       </ul>
 
-      <div className={nav ? "fixed left-0 top-0 h-full w-[60%] border-r bg-white ease-in-out duration-500" : "fixed left-[-100%]"}>
+      <div className={nav ? 'fixed left-0 top-0 h-full w-[60%] border-r bg-white ease-in-out duration-500' : 'fixed left-[-100%]'}>
         <h1 className="w-full text-3xl font-bold m-4">Hello</h1>
 
         <div onClick={handle} className="block md:hidden">
