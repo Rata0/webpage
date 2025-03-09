@@ -8,4 +8,15 @@ export default defineConfig({
     react(), 
     tailwindcss()
   ],
+  server: {
+    host: true,
+    port: 8070,
+    watch: {
+      usePolling: true,
+      interval: 300,
+    },
+    proxy: {
+      '/products': 'http://localhost:8080/',
+    }
+  }
 })
