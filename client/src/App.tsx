@@ -9,21 +9,14 @@ function PageOne() {
   )
 }
 
-function PageTwo() {
-  return (
-    <div>Page Two</div>
-  )
-}
-
 function App() {
   return (
     <BrowserRouter>
       <NavBar />
       <ScrollMenu />
-      <Card />
       <Routes>
-        <Route path="home" element={<PageOne />} />
-        <Route path="products" element={<PageTwo />} />
+        <Route path='cards' element={<Card />} />
+        <Route path='create' element={<PageOne />} />
       </Routes>
     </BrowserRouter>
   )

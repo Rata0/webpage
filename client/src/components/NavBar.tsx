@@ -2,6 +2,7 @@ import { IoMenuSharp } from 'react-icons/io5'
 import { IoIosClose } from 'react-icons/io'
 import { CiHeart, CiLogin  } from 'react-icons/ci'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function NavBar() {
   const [nav, setNav] = useState(false)
@@ -12,8 +13,8 @@ export default function NavBar() {
     <div className='border-b flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-[#000]'>
 
       <ul className='w-full flex font-bold text-sm uppercase'>
-        <li className='p-4 hover:text-red-500 transition-colors duration-200'>Главная</li>
-        <li className='p-4 hover:text-red-500 transition-colors duration-200'>Каталог аниме</li>
+        <li className='p-4 hover:text-red-500 transition-colors duration-200'>главная</li>
+        <li className='p-4 hover:text-red-500 transition-colors duration-200'><Link to='cards'>Карточки аниме</Link></li>
         <li className='p-4 hover:text-red-500 transition-colors duration-200'>Популярное</li>
         <li className='p-4 hover:text-red-500 transition-colors duration-200'>Новинки</li>
       </ul>
@@ -23,6 +24,7 @@ export default function NavBar() {
       </div>
 
       <ul className='hidden md:flex'>
+        <li className='p-4 hover:text-red-500 transition-colors duration-200'><Link to='create'>Добавить</Link></li>
         <li className='p-4 hover:text-red-500 transition-colors duration-200'><CiHeart size={30}/></li>
         <li className='p-4 hover:text-red-500 transition-colors duration-200'><CiLogin size={30}/></li>
       </ul>
