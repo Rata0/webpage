@@ -1,13 +1,9 @@
-import NavBar from './components/NavBar'
-import ScrollMenu from './components/ScrollMenu'
-import Card from './components/Card'
+import { NavBar } from './components/navBar'
+import { ScrollMenu } from './components/scrollMenu'
+import { Card } from './components/card'
+import { CreateForm } from './components/form'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-function PageOne() {
-  return (
-    <div>Page One</div>
-  )
-}
 
 function App() {
   return (
@@ -16,7 +12,7 @@ function App() {
       <ScrollMenu />
       <Routes>
         <Route path='cards' element={<Card />} />
-        <Route path='create' element={<PageOne />} />
+        <Route path='create' element={<CreateForm />} />
       </Routes>
     </BrowserRouter>
   )
