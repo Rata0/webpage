@@ -1,6 +1,6 @@
 import { useForm, SubmitHandler, Controller } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { TypeInputs, validationScheme } from '../validation/validation'
+import { TypeInputs, validationScheme } from '../../../features/form/lib/validation'
 
 export default function CreateForm() {
   const { 

@@ -1,0 +1,1 @@
+export { default as Card } from '../../features/card/ui/Card'
