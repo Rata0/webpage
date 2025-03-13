@@ -1,7 +1,7 @@
-import { NavBar } from './components/navBar'
-import { ScrollMenu } from './components/scrollMenu'
-import { Card } from './components/card'
-import { CreateForm } from './components/form'
+import { NavBar } from './pages/navBar'
+import { ScrollMenu } from './pages/scrollMenu'
+import { Card } from './pages/card-read'
+import { CreateForm } from './pages/form'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 
