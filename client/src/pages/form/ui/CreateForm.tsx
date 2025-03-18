@@ -1,6 +1,7 @@
 import { useForm, SubmitHandler, Controller } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { TypeInputs, validationScheme } from '../../../features/form/lib/validation'
+import axios from 'axios'
 
 export default function CreateForm() {
   const { 
@@ -16,8 +17,12 @@ export default function CreateForm() {
     },
     mode: 'onChange'
   })
-  const onSubmit: SubmitHandler<TypeInputs> = (data) => {
-    console.log(data)
+  const onSubmit: SubmitHandler<TypeInputs> = async (data) => {
+    try {
+      await axios.post('http://127.0.0.1:8080/create', data)
+    } catch (e) { 
+      console.error('Ошибка при отправке данных:', e)
+    }
   }
 
   return (

@@ -16,7 +16,7 @@ export default defineConfig({
       interval: 300,
     },
     proxy: {
-      '/products': 'http://localhost:8080/',
+      '/cards': 'http://localhost:8080/',
     }
   }
 })

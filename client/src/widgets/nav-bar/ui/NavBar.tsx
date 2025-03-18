@@ -14,7 +14,7 @@ export default function NavBar() {
 
       <ul className='w-full flex font-bold text-sm uppercase'>
         <li className='p-4 hover:text-red-500 transition-colors duration-200'>главная</li>
-        <li className='p-4 hover:text-red-500 transition-colors duration-200'><Link to='cards'>Карточки аниме</Link></li>
+        <li className='p-4 hover:text-red-500 transition-colors duration-200'><Link to='cards'>Карточки</Link></li>
         <li className='p-4 hover:text-red-500 transition-colors duration-200'>Популярное</li>
         <li className='p-4 hover:text-red-500 transition-colors duration-200'>Новинки</li>
       </ul>
@@ -38,7 +38,7 @@ export default function NavBar() {
 
         <ul className='pt-25 uppercase m-4'>
           <li className='p-4 border-b-1'>Главная</li>
-          <li className='p-4 border-b-1'>Каталог аниме</li>
+          <li className='p-4 border-b-1'>Карточки</li>
           <li className='p-4 border-b-1'>Популярное</li>
           <li className='p-4 border-b-1'>Избранное</li>
           <li className='p-4'>Войти</li>
